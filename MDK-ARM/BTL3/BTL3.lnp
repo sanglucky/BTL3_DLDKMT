@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"btl3\startup_stm32f103xb.o"
+"btl3\main.o"
+"btl3\stm32f1xx_it.o"
+"btl3\stm32f1xx_hal_msp.o"
+"btl3\stm32f1xx_hal_gpio_ex.o"
+"btl3\stm32f1xx_hal_i2c.o"
+"btl3\stm32f1xx_hal.o"
+"btl3\stm32f1xx_hal_rcc.o"
+"btl3\stm32f1xx_hal_rcc_ex.o"
+"btl3\stm32f1xx_hal_gpio.o"
+"btl3\stm32f1xx_hal_dma.o"
+"btl3\stm32f1xx_hal_cortex.o"
+"btl3\stm32f1xx_hal_pwr.o"
+"btl3\stm32f1xx_hal_flash.o"
+"btl3\stm32f1xx_hal_flash_ex.o"
+"btl3\stm32f1xx_hal_exti.o"
+"btl3\stm32f1xx_hal_tim.o"
+"btl3\stm32f1xx_hal_tim_ex.o"
+"btl3\stm32f1xx_hal_uart.o"
+"btl3\system_stm32f1xx.o"
+--strict --scatter "BTL3\BTL3.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTL3.map" -o BTL3\BTL3.axf
